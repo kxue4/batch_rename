@@ -1,2 +1,2 @@
-# BatchEdit
-A script to change local pictures &amp; videos name, for personal use.
+# batch_rename
+[![build status of master](https://travis-ci.org/kxue4/batch_rename.svg?branch=master)](https://travis-ci.org/kxue4/batch_rename)
