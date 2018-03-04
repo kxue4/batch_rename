@@ -3,4 +3,4 @@ python:
  - "3.6"
 
 script:
- python server.py
+ - python -m unittest
