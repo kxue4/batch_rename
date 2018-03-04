@@ -15,7 +15,7 @@ def move(path):
     """
     Move pics and vids outside of folders
     """
-    folder_name = ('图片', '图', '视频', '图包')
+    folder_name = ('pic', 'pics', 'vid', 'vids')
     for folders in os.listdir(path):
         for folder in os.listdir(path + folders + '/'):
             if folder in folder_name:
@@ -34,7 +34,7 @@ def rename(path):
         dash = folders.index('—')
         # black = folders.index('】')
         blank = folders.index(' ')
-        girl_name = folders[: dash]
+        actor_name = folders[: dash]
         series_name = folders[dash+1: blank]
         for files in os.listdir(path + folders + '/'):
             dot = files.rindex('.')
@@ -48,10 +48,10 @@ def rename(path):
                 print(folders)
             os.chdir(path + folders + '/')
             if file_type.lower().endswith(pic):
-                os.rename(files, girl_name + '-' + series_name + ' ' +
+                os.rename(files, actor_name + '-' + series_name + ' ' +
                           '(' + str(new_number) + ')' + file_type)
             if file_type.lower().endswith(vid):
-                os.rename(files, girl_name + '-' + series_name + ' ' +
+                os.rename(files, actor_name + '-' + series_name + ' ' +
                           '(' + str(new_number) + ')' + file_type)
 
 
