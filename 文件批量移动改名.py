@@ -2,18 +2,15 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2017/11/3 14:21
 # @Author  : Kaiwen Xue
-# @文件    : 文件批量移动改名.py
+# @file    : 文件批量移动改名.py
 # @Software: PyCharm
-"""
-
-"""
 import os
 import shutil
 
 
-def move(路径):
+def 移动文件(路径):
     """
-    Move 照片s and 视频s outside of 外层文件夹
+    把照片和视频从内层文件夹移动到外层文件夹
     """
     文件夹名称 = ('pic', 'pics', 'vid', 'vids')
     for 外层文件夹 in os.listdir(路径):
@@ -24,9 +21,9 @@ def move(路径):
                 os.rmdir(路径 + 外层文件夹 + '/' + 内层文件夹 + '/')
 
 
-def rename(路径):
+def 重命名文件(路径):
     """
-    Renames 文件s.
+    重命名文件
     """
     照片 = ('.jpg', '.png', '.jpeg', '.bmp', '.gif')
     视频 = ('.mp4', '.mov', '.flv', '.3gp', '.avi', '.mkv', '.wmv', '.vob', '.swf', '.rmvb')
@@ -60,8 +57,8 @@ def main():
     This is the main() function
     """
     路径 = 'C:/Go/linshi/linshi/go/'
-    move(路径)
-    rename(路径)
+    移动文件(路径)
+    重命名文件(路径)
 
 
 if __name__ == '__main__':
