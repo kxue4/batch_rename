@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2017/11/3 14:21
 # @Author  : Kaiwen Xue
-# @文件    : 文件批量移动改名.py
+# @文件    : batch_rename.py
 # @Software: PyCharm
 """
 
