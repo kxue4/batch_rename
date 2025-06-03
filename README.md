@@ -1,2 +1,2 @@
 # 文件批量移动改名
-[![build status of master](https://travis-ci.org/kxue4/batch_rename.svg?branch=master)](https://travis-ci.org/kxue4/batch_rename)
+![GitHub last commit](https://img.shields.io/github/last-commit/kxue4/batch_rename.svg)
